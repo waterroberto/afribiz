@@ -33,7 +33,8 @@ export default function WalletBalance() {
             {(
               userData?.wallet.profit +
               userData?.wallet.bonus +
-              userData?.wallet.investment
+              userData?.wallet.investment + 
+              userData?.wallet.deposit
             ).toLocaleString()}
           </span>
         ) : (

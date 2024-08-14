@@ -43,7 +43,7 @@ export default function WalletBalance() {
       </p>
       <p className='mb-2 text-sm text-gray-600'>{userData._id}</p>
       <div className='mt-4 flex flex-col sm:flex-row md:items-center gap-4'>
-        <Link href='/dashboard/account'>
+        <Link href='/dashboard/profile'>
           <Button
             startIcon={<IoIosSettings />}
             endIcon={<HiArrowNarrowRight />}

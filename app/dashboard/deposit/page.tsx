@@ -255,7 +255,7 @@ function Deposit() {
                     variant='outlined'
                     onClick={() => {
                       window?.navigator?.clipboard
-                        .writeText(`123456eyXkdYkkvpt1i41nXzuTf9QHJQLa789`)
+                        .writeText(cryptoAdresses[formik.values.asset])
 
                         .then(() => {
                           toast.success('Link Copied');

@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang='en'>
       <body>
         <ClientProvider>{children}</ClientProvider>
-        <Script src="//code.tidio.co/kwyr7hbgd3fvtdcsyurhlqox3ckyat97.js" async></Script>
+        {/* <Script src="//code.tidio.co/kwyr7hbgd3fvtdcsyurhlqox3ckyat97.js" async></Script> */}
       </body>
     </html>
   );

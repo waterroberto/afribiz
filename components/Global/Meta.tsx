@@ -7,7 +7,7 @@ interface IProps {
 }
 
 const Meta = ({
-  title = 'Dashboard | Blue Chips Trade',
+  title = 'Dashboard | Afribiz Trade Investment',
   description = 'Effortlessly increase your trading potential',
 }: IProps) => {
   return (

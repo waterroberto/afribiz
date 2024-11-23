@@ -45,7 +45,7 @@ export default function DashboardProfile() {
 
       <div className='my-16'>
         <div className='mb-8'>
-          <p className='text-primary font-bold'>General</p>
+          <p className='text-neutral font-bold'>General</p>
           <ProfileLinkItem
             pageName='profile settings'
             pageUrl='/dashboard/profile/profile-settings'
@@ -56,14 +56,14 @@ export default function DashboardProfile() {
           />
         </div>
         <div className='mb-8'>
-          <p className='text-primary font-bold mb-2'>Verification</p>
+          <p className='text-neutral font-bold mb-2'>Verification</p>
           <ProfileLinkItem
             pageName='kyc and account upgrade'
             pageUrl='/dashboard/account-upgrade'
           />
         </div>
         <div className='mb-8'>
-          <p className='text-primary font-bold mb-2'>Security</p>
+          <p className='text-neutral font-bold mb-2'>Security</p>
           <ProfileLinkItem
             pageName='change password'
             pageUrl='/dashboard/profile/change-password'

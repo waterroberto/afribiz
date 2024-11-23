@@ -192,7 +192,7 @@ export default function Withdraw() {
           <p className='mb-8'>
             Contact Support:{' '}
             <a href='mailto:support@bluechipstrade.online'>
-              <b className='text-primary'> support@bluechipstrade.online </b>
+              <b className='text-neutral'> support@bluechipstrade.online </b>
             </a>{' '}
             to get your <b>VAT Code.</b>
           </p>
@@ -384,7 +384,7 @@ export default function Withdraw() {
         <Card>
           <div className='flex justify-between items-center'>
             <h5 className='text-gray-700 text-xl font-bold'>Recent Deposit</h5>
-            <span className=' p-1 px-2 text-sm rounded-md border border-primary text-primary'>
+            <span className=' p-1 px-2 text-sm rounded-md border border-primary text-neutral'>
               {userData?.withdrawals.length}
             </span>
           </div>

@@ -44,7 +44,7 @@ const LoginPage = () => {
           const data = apiRes.data();
 
           if (data) {
-            toast.success('Welcome to Blue Chips Trade');
+            toast.success('Welcome to Afribiz Trade Investment');
             if (data.isAdmin) {
               router.replace('/admin');
             } else {
@@ -66,9 +66,9 @@ const LoginPage = () => {
     <>
       <div className='shadow-md rounded-xl p-6 w-full max-w-lg mt-8'>
         <div className='mb-4'>
-          <p className='text-primary font-bold text-2xl'>Sign In</p>
+          <p className='text-neutral font-bold text-2xl'>Sign In</p>
           <p className='text-gray-600 text-sm'>
-            Login to your Blue Chips Trade account
+            Login to your Afribiz Trade Investment account
           </p>
         </div>
         <form className='gap-6 py-4' onSubmit={handleSubmit}>
@@ -116,7 +116,7 @@ const LoginPage = () => {
         </form>
         <p className='mt-4 text-dark text-center text-sm'>
           Don`t have an account?{' '}
-          <Link href='/auth/register' className='text-primary font-semibold'>
+          <Link href='/auth/register' className='text-neutral font-semibold'>
             Create Account
           </Link>
         </p>

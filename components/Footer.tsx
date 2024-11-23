@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
         {/* . . . */}
         <div>
-          <p className='mb-4 text-lg sm:text-xl font-extrabold text-primary'>
+          <p className='mb-4 text-lg sm:text-xl font-extrabold text-neutral'>
             Quick Links
           </p>
           <div className='flex flex-col mb-3 gap-4'>
@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
         {/* . . . */}
         <div>
-          <p className='mb-4 text-lg sm:text-xl font-extrabold text-primary'>
+          <p className='mb-4 text-lg sm:text-xl font-extrabold text-neutral'>
             Contact Us
           </p>
           <div>

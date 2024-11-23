@@ -30,7 +30,7 @@ export default function Sidebar({
         onClick={toggleSidebar}
       ></div>
       <div
-        className={`fixed top-0 z-50 bg-white h-screen duration-300 overflow-y-auto ${
+        className={`fixed top-0 z-50 bg-primary h-screen duration-300 overflow-y-auto ${
           isOpen
             ? 'lg:w-1/6 translate-x-0 w-64 left-0'
             : 'lg:w-1/12 -translate-x-[100%] lg:translate-x-0 w-0 -left-4 lg:left-0'
@@ -53,10 +53,10 @@ export default function Sidebar({
             >
               <div
                 className={clsx(
-                  'my-1 py-3 flex gap-4 w-full h-10 items-center duration-500 rounded-md text-sm',
+                  'my-1 py-3 flex gap-4 w-full h-10 items-center duration-500 rounded-md text-md',
                   pathname.trim() === link.page
-                    ? 'bg-primary-2 text-primary bg-gray-50'
-                    : 'text-gray-500',
+                    ? 'bg-primary-2 text-[#0177FB] bg-gray-50'
+                    : 'text-neutral',
                   isOpen ? 'justify-start pl-6' : 'justify-center pl-0'
                 )}
               >

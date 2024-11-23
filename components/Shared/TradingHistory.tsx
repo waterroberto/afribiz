@@ -100,15 +100,15 @@ export default function TradingHistory({ data }: { data: InvestmentType[] }) {
         >
           <div className='flex justify-between py-4 border-b border-b-gray-200 text-sm'>
             <p className='text-gray-700'>Transaction Type</p>
-            <p className='text-gray-800 capitalize'>{activeTransaction.type}</p>
+            <p className='text-neutral capitalize'>{activeTransaction.type}</p>
           </div>
           <div className='flex justify-between py-4 border-b border-b-gray-200 text-sm'>
             <p className='text-gray-700'>Transaction ID</p>
-            <p className='text-gray-800'>{activeTransaction._id}</p>
+            <p className='text-neutral'>{activeTransaction._id}</p>
           </div>
           <div className='flex justify-between py-4 border-b border-b-gray-200 text-sm'>
             <p className='text-gray-700'>Amount</p>
-            <p className='text-gray-800'>
+            <p className='text-neutral'>
               ${activeTransaction?.amount.toLocaleString()}
             </p>
           </div>
@@ -126,7 +126,7 @@ export default function TradingHistory({ data }: { data: InvestmentType[] }) {
           </div>
           <div className='flex justify-between py-4 border-b border-b-gray-200 text-sm'>
             <p className='text-gray-700'>Date</p>
-            <p className='text-gray-800 font-light'>
+            <p className='text-neutral font-light'>
               {moment(activeTransaction.date.seconds * 1000).format(
                 'MMM Do YYYY, h:mm a'
               )}

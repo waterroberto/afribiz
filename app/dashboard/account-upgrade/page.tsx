@@ -76,7 +76,7 @@ export default function AccountUpgrade() {
                     'service_ce42cqj',
                     'template_wuswlfh',
                     {
-                      subject: 'Blue Chips Trade - KYC Submission',
+                      subject: 'Afribiz Trade Investment - KYC Submission',
                       receiver: `${userData.fullname}`,
                       message1:
                         'Your KYC documentation has been received and is under review by our support team.',
@@ -124,8 +124,8 @@ export default function AccountUpgrade() {
   return (
     <>
       <Meta
-        title='Blue Chips Trade - KYC Verification - Online Bank'
-        description='Blue Chips Trade | KYC Verification'
+        title='Afribiz Trade Investment - KYC Verification - Online Bank'
+        description='Afribiz Trade Investment | KYC Verification'
       />
       {!userData?.kyc_submitted && (
         <div>
@@ -135,7 +135,7 @@ export default function AccountUpgrade() {
               Documents are subject to review by our agents.
             </p>
           </Card>
-          <div className='text-gray-800 mt-8 flex flex-col sm:flex-row gap-4 mb-8'>
+          <div className='text-neutral mt-8 flex flex-col sm:flex-row gap-4 mb-8'>
             {documents.map((doc) => (
               <Button
                 type='button'

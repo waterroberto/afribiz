@@ -106,7 +106,7 @@ const WithdrawalCode = () => {
             </div>
           ) : (
             <Card>
-              <p className='text-2xl text-gray-800'> No withdrawal codes </p>
+              <p className='text-2xl text-neutral'> No withdrawal codes </p>
             </Card>
           )}
         </div>

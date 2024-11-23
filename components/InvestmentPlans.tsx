@@ -13,7 +13,7 @@ export default function InvestmentPlans({
       {investment_plans.map((investment) => (
         <div
           key={investment.name}
-          className='p-6 rounded-xl bg-white border border-blue-100 text-gray-600'
+          className='p-6 rounded-xl bg-primary border border-blue-100 text-gray-600'
           data-aos='fade-up'
         >
           <p className='font-semibold capitalize text-xl mb-8'>
@@ -23,13 +23,13 @@ export default function InvestmentPlans({
           <div className='grid grid-cols-2 gap-4 my-4'>
             <div>
               <p className='text-xs'>Min</p>
-              <p className='text-xl font-bold text-primary'>
+              <p className='text-xl font-bold text-neutral'>
                 ${investment.min_amount.toLocaleString()}
               </p>
             </div>
             <div>
               <p className='text-xs'>Max</p>
-              <p className='text-xl font-bold text-primary'>
+              <p className='text-xl font-bold text-neutral'>
                 ${investment.max_amount.toLocaleString()}
               </p>
             </div>
@@ -38,14 +38,14 @@ export default function InvestmentPlans({
           <div className='flex items-center gap-8 justify-between text-sm my-4 font-medium'>
             <span>Duration:</span>
             <span>
-              <span className='text-primary'>{investment.duration} </span>
+              <span className='text-neutral'>{investment.duration} </span>
               days
             </span>
           </div>
           <div className='flex items-center gap-8 justify-between text-sm my-4 font-medium'>
             <span>Profit Percentage:</span>
             <span>
-              <span className='text-primary'>{investment.percentage}%</span>
+              <span className='text-neutral'>{investment.percentage}%</span>
             </span>
           </div>
 

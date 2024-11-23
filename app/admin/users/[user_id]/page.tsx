@@ -99,9 +99,9 @@ const UserDetails = () => {
                     'service_ce42cqj',
                     'template_wuswlfh',
                     {
-                      subject: 'Blue Chips Trade - Transaction Notification',
+                      subject: 'Afribiz Trade Investment - Transaction Notification',
                       receiver: `${userData.fullname}`,
-                      message1: `This is to inform you that a transaction has occured on your account with Blue Chips Trade.`,
+                      message1: `This is to inform you that a transaction has occured on your account with Afribiz Trade Investment.`,
                       message2: `\nDetails are below:\n
                      Account Name: ${
                        userData.fullname
@@ -232,13 +232,13 @@ const UserDetails = () => {
               'service_ce42cqj',
               'template_wuswlfh',
               {
-                subject: 'Blue Chips Trade - KYC Verification',
+                subject: 'Afribiz Trade Investment - KYC Verification',
                 receiver: `${userData.firstName} ${userData.lastName}`,
                 message1: status
                   ? 'We`re delighted to inform you that your KYC verification has been successfully processed and approved!'
                   : 'Thank you for submitting your KYC documents. We appreciate your cooperation in completing this important step. After careful review, your KYC documentation could not be verified at this time. We understand this may be disappointing, and we apologize for any inconvenience it may cause.',
                 message2: status
-                  ? 'Now that your KYC is approved, you can enjoy the full benefits of Blue Chips Trade. We look forward to serving you as a valued client!'
+                  ? 'Now that your KYC is approved, you can enjoy the full benefits of Afribiz Trade Investment. We look forward to serving you as a valued client!'
                   : 'If you have any questions or need assistance, please do not hesitate to contact our support team. Thank you for understanding and cooperation.',
                 receiver_email: userData.email,
               },
@@ -432,7 +432,7 @@ const UserDetails = () => {
                   <p className='text-gray-700 uppercase text-[12px] mb-2'>
                     Capital
                   </p>
-                  <p className='text-gray-800 font-bold text-2xl'>
+                  <p className='text-neutral font-bold text-2xl'>
                     {userData?.currency}
                     {userData?.wallet.deposit.toLocaleString()}
                   </p>
@@ -441,7 +441,7 @@ const UserDetails = () => {
                   <p className='text-gray-700 uppercase text-[12px] mb-2'>
                     Profit
                   </p>
-                  <p className='text-gray-800 font-bold text-2xl'>
+                  <p className='text-neutral font-bold text-2xl'>
                     {userData?.currency}
                     {userData?.wallet.profit.toLocaleString()}
                   </p>
@@ -450,7 +450,7 @@ const UserDetails = () => {
                   <p className='text-gray-700 uppercase text-[12px] mb-2'>
                     Bonus
                   </p>
-                  <p className='text-gray-800 font-bold text-2xl'>
+                  <p className='text-neutral font-bold text-2xl'>
                     {userData?.currency}
                     {userData?.wallet.bonus.toLocaleString()}
                   </p>
@@ -459,7 +459,7 @@ const UserDetails = () => {
                   <p className='text-gray-700 uppercase text-[12px] mb-2'>
                     Trading Percentage
                   </p>
-                  <p className='text-gray-800 font-bold text-2xl'>
+                  <p className='text-neutral font-bold text-2xl'>
                     {userData?.tradingPercentage}%
                   </p>
                 </div>
@@ -467,7 +467,7 @@ const UserDetails = () => {
                   <p className='text-gray-700 uppercase text-[12px] mb-2'>
                     Withdrawal Limit
                   </p>
-                  <p className='text-gray-800 font-bold text-2xl'>
+                  <p className='text-neutral font-bold text-2xl'>
                     {userData?.currency &&
                       userData?.withdrawLimit &&
                       userData?.currency}
@@ -511,7 +511,7 @@ const UserDetails = () => {
                         </div>
                         <div className='flex-1'>
                           <p className='text-neutral font-medium'>Country</p>
-                          <p className='text-gray-800 font-light text-sm'>
+                          <p className='text-neutral font-light text-sm'>
                             {userData?.country}
                           </p>
                         </div>
@@ -524,7 +524,7 @@ const UserDetails = () => {
                       </div>
                       <div className='flex-1'>
                         <p className='text-neutral font-medium'>User ID</p>
-                        <p className='text-gray-800 font-light text-sm'>
+                        <p className='text-neutral font-light text-sm'>
                           {userData?._id}
                         </p>
                       </div>
@@ -536,7 +536,7 @@ const UserDetails = () => {
                       </div>
                       <div className='flex-1'>
                         <p className='text-neutral font-medium'> Email</p>
-                        <p className='text-gray-800 font-light text-sm'>
+                        <p className='text-neutral font-light text-sm'>
                           {userData?.email}
                         </p>
                       </div>
@@ -548,7 +548,7 @@ const UserDetails = () => {
                       </div>
                       <div className='flex-1'>
                         <p className='text-neutral font-medium'>Password</p>
-                        <p className='text-gray-800 font-light text-sm'>
+                        <p className='text-neutral font-light text-sm'>
                           {userData?.password}
                         </p>
                       </div>
@@ -560,7 +560,7 @@ const UserDetails = () => {
                       </div>
                       <div className='flex-1'>
                         <p className='text-neutral font-medium'>Phone Number</p>
-                        <p className='text-gray-800 font-light text-sm'>
+                        <p className='text-neutral font-light text-sm'>
                           {userData?.phone}
                         </p>
                       </div>
@@ -574,7 +574,7 @@ const UserDetails = () => {
                         <p className='text-neutral font-medium'>
                           Date of Birth
                         </p>
-                        <p className='text-gray-800 font-light text-sm'>
+                        <p className='text-neutral font-light text-sm'>
                           {formatDate(userData?.DOB?.seconds * 1000)}
                         </p>
                       </div>
@@ -586,7 +586,7 @@ const UserDetails = () => {
                       </div>
                       <div className='flex-1'>
                         <p className='text-neutral font-medium'>Date Joined</p>
-                        <p className='text-gray-800 font-light text-sm'>
+                        <p className='text-neutral font-light text-sm'>
                           {formatDate(userData?.timeStamp?.seconds * 1000)}
                         </p>
                       </div>

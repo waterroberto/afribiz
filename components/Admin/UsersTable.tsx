@@ -95,7 +95,7 @@ export default function UsersTable({
   }, [users, searchValue]);
 
   return (
-    <div className='card rounded-xl p-4 bg-white'>
+    <div className='card rounded-xl p-4 bg-primary'>
       <div className='mb-8 p-4'>
         <p className='font-bold text-xl text-gray-700 mb-4'>All Users</p>
         <TextInput
@@ -109,7 +109,7 @@ export default function UsersTable({
 
       {isLoading && (
         <div
-          className={`mx-2 rounded-none w-full absolute left-0 top-0 bottom-0 right-0 h-full bg-white/10 backdrop-blur-[2px] z-10 flex items-center justify-center`}
+          className={`mx-2 rounded-none w-full absolute left-0 top-0 bottom-0 right-0 h-full bg-primary/10 backdrop-blur-[2px] z-10 flex items-center justify-center`}
         >
           <Loader />
         </div>
@@ -122,7 +122,7 @@ export default function UsersTable({
         first={first}
         rows={rows}
         rowsPerPageOptions={[5, 10, 20]}
-        className='text-gray-800 rounded-md text-sm p-datatable p-component p-datatable-responsive-scroll'
+        className='text-neutral rounded-md text-sm p-datatable p-component p-datatable-responsive-scroll'
         sortOrder={-1}
         sortField='timestamp'
         onPage={onPageChange}

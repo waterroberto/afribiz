@@ -209,9 +209,9 @@ const Register = () => {
     <>
       <div className='shadow-md rounded-xl p-6 w-full max-w-lg mt-8'>
         <div className='mb-4'>
-          <p className='text-primary font-bold text-2xl'>Register</p>
+          <p className='text-neutral font-bold text-2xl'>Register</p>
           <p className='text-gray-600 text-sm'>
-            Create a trading account with Blue Chips Trade
+            Create a trading account with Afribiz Trade Investment
           </p>
         </div>
         <form className='gap-6 py-4' onSubmit={handleSubmit}>
@@ -367,7 +367,7 @@ const Register = () => {
         </form>
         <p className='mt-4 text-dark text-center text-sm'>
           Already have an account?{' '}
-          <Link href='/auth/login' className='text-primary font-semibold'>
+          <Link href='/auth/login' className='text-neutral font-semibold'>
             Sign in instead
           </Link>
         </p>

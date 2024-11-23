@@ -80,7 +80,7 @@ function Wallets() {
               <div className='w-full col-span-1 my-4'>
                 <label
                   htmlFor='btc'
-                  className='mb-2 font-semibold text-sm text-gray-800'
+                  className='mb-2 font-semibold text-sm text-neutral'
                 >
                   Bitcoin
                 </label>
@@ -102,7 +102,7 @@ function Wallets() {
               <div className='w-full col-span-1 my-4'>
                 <label
                   htmlFor='eth'
-                  className='mb-2 font-semibold text-sm text-gray-800'
+                  className='mb-2 font-semibold text-sm text-neutral'
                 >
                   Ethereum
                 </label>
@@ -124,7 +124,7 @@ function Wallets() {
               <div className='w-full col-span-1 my-4'>
                 <label
                   htmlFor='usdt'
-                  className='mb-2 font-semibold text-sm text-gray-800'
+                  className='mb-2 font-semibold text-sm text-neutral'
                 >
                   USDT (TRC20)
                 </label>

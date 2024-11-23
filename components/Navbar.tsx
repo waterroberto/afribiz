@@ -20,7 +20,7 @@ const Navbar = () => {
   const toggleMobileNav = () => setShowMobileNav((prev) => !prev);
 
   return (
-    <header className='bg-white w-full fixed top-0 left-0 max-h-40 z-20'>
+    <header className='bg-primary w-full fixed top-0 left-0 max-h-40 z-20'>
       <nav className='padding border-b border-b-gray-100 flex items-center justify-between'>
         <Link href='/'>
           <Logo />
@@ -51,14 +51,14 @@ const Navbar = () => {
         <button
           aria-label='navbar toggle Button'
           onClick={toggleMobileNav}
-          className='block sm:hidden text-primary p-2 z-20 duration-500 border-[1px] rounded-md'
+          className='block sm:hidden text-neutral p-2 z-20 duration-500 border-[1px] rounded-md'
         >
           <CgMenu className='text-2xl' />
         </button>
       </nav>
 
       <ul
-        className={`absolute w-full padding items-start gap-8 flex sm:hidden flex-col shadow-2xl bg-white duration-500 ${
+        className={`absolute w-full padding items-start gap-8 flex sm:hidden flex-col shadow-2xl bg-primary duration-500 ${
           showMobileNav ? 'translate-y-0' : '-translate-y-[150%]'
         }`}
       >

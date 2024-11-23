@@ -25,7 +25,7 @@ export default function ClientProvider({
       <AuthContextProvider>
         <UserDataContextProvider>
           <GoogleTranslateProvider>
-             <Script src="//code.tidio.co/kwyr7hbgd3fvtdcsyurhlqox3ckyat97.js" async></Script>
+             {/* <Script src="//code.tidio.co/kwyr7hbgd3fvtdcsyurhlqox3ckyat97.js" async></Script> */}
 
             {children}
           </GoogleTranslateProvider>

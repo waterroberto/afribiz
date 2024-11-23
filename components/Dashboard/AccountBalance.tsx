@@ -18,7 +18,7 @@ export default function AccountBalance() {
   return (
     <section className='my-8 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4'>
       {/*  */}
-      <div className='rounded-xl bg-white p-6 flex items-center gap-4 border border-gray-200'>
+      <div className='rounded-xl bg-primary p-6 flex items-center gap-4 border border-gray-200'>
         <span className={`${card_icon_style} bg-red-500`}>
           <TbMoneybag className='text-3xl' />
         </span>
@@ -32,7 +32,7 @@ export default function AccountBalance() {
         </div>
       </div>
       {/*  */}
-      <div className='rounded-xl bg-white p-6 flex items-center gap-4 border border-gray-200'>
+      <div className='rounded-xl bg-primary p-6 flex items-center gap-4 border border-gray-200'>
         <span className={`${card_icon_style} bg-teal-600`}>
           <GiReceiveMoney className='text-3xl' />
         </span>
@@ -46,7 +46,7 @@ export default function AccountBalance() {
         </div>
       </div>
       {/*  */}
-      <div className='rounded-xl bg-white p-6 flex items-center gap-4 border border-gray-200'>
+      <div className='rounded-xl bg-primary p-6 flex items-center gap-4 border border-gray-200'>
         <span className={`${card_icon_style} bg-gray-600`}>
           <FaArrowsDownToPeople className='text-3xl' />
         </span>
@@ -60,7 +60,7 @@ export default function AccountBalance() {
         </div>
       </div>
       {/*  */}
-      <div className='rounded-xl bg-white p-6 flex items-center gap-4 border border-gray-200'>
+      <div className='rounded-xl bg-primary p-6 flex items-center gap-4 border border-gray-200'>
         <span className={`${card_icon_style} bg-orange-600`}>
           <HiOutlineStatusOnline className='text-3xl' />
         </span>

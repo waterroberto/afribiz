@@ -2,9 +2,9 @@ import React from 'react';
 
 export default function WhatIsForex() {
   return (
-    <section className='p-8 py-24 bg-white lg:px-24'>
+    <section className='p-8 py-24 bg-primary lg:px-24'>
       <p className='text-3xl md:text-4xl font-bold text-gray-700 mb-16 text-center'>
-        About <span className='text-primary'>Blue Chips Trade</span>
+        About <span className='text-neutral'>Afribiz Trade Investment</span>
       </p>
       <div className='grid grid-cols-1 gap-8 md:grid-cols-2'>
         <iframe

@@ -15,7 +15,7 @@ const Referral = () => {
           Use the link to invite your friends
         </p>
       </div>
-      <div className='col-span-2 xl:col-span-1 p-6 bg-white rounded-tr-2xl rounded-br-2xl'>
+      <div className='col-span-2 xl:col-span-1 p-6 bg-primary rounded-tr-2xl rounded-br-2xl'>
         <div className='flex items-center gap-4'>
           <div className='bg-gray-200 rounded-2xl'>
             <p className='text-gray-600 text-[12px] p-4'>

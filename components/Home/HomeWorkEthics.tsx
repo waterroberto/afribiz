@@ -30,7 +30,7 @@ const HomeWorkEthics = () => {
               className='flex items-center justify-start gap-4 mt-8 md:mb-12'
               data-aos='flip-right'
             >
-              <div className='icon text-5xl text-primary'>
+              <div className='icon text-5xl text-neutral'>
                 <GiReceiveMoney />
               </div>
               <div className='content'>
@@ -45,7 +45,7 @@ const HomeWorkEthics = () => {
               className='flex items-center justify-start gap-4 my-8 md:my-12'
               data-aos='flip-left'
             >
-              <div className='icon text-5xl text-primary'>
+              <div className='icon text-5xl text-neutral'>
                 <RiLuggageDepositLine />
               </div>
               <div className='content'>
@@ -60,7 +60,7 @@ const HomeWorkEthics = () => {
               className='flex items-center justify-start gap-4 my-8 md:mb-12'
               data-aos='flip-right'
             >
-              <div className='icon text-5xl text-primary'>
+              <div className='icon text-5xl text-neutral'>
                 <RiTeamLine />
               </div>
               <div className='content'>

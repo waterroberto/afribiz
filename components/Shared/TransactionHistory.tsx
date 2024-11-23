@@ -127,26 +127,26 @@ export default function TransactionHistory({
         >
           <div className='flex justify-between py-4 border-b border-b-gray-200 text-sm'>
             <p className='text-gray-700'>Transaction Type</p>
-            <p className='text-gray-800'>{activeTransaction.type}</p>
+            <p className='text-neutral'>{activeTransaction.type}</p>
           </div>
           <div className='flex justify-between py-4 border-b border-b-gray-200 text-sm'>
             <p className='text-gray-700'>Transaction ID</p>
-            <p className='text-gray-800'>{activeTransaction._id}</p>
+            <p className='text-neutral'>{activeTransaction._id}</p>
           </div>
           <div className='flex justify-between py-4 border-b border-b-gray-200 text-sm'>
             <p className='text-gray-700'>Amount</p>
-            <p className='text-gray-800'>
+            <p className='text-neutral'>
               {activeTransaction?.currency}
               {activeTransaction?.amount.toLocaleString()}
             </p>
           </div>
           <div className='flex justify-between py-4 border-b border-b-gray-200 text-sm'>
             <p className='text-gray-700'>Transaction Status</p>
-            <p className='text-gray-800'>{activeTransaction?.status}</p>
+            <p className='text-neutral'>{activeTransaction?.status}</p>
           </div>
           <div className='flex justify-between py-4 border-b border-b-gray-200 text-sm'>
             <p className='text-gray-700'>Date</p>
-            <p className='text-gray-800'>
+            <p className='text-neutral'>
               {moment(activeTransaction.date.seconds * 1000).format(
                 'MMM Do YYYY, h:mm a'
               )}

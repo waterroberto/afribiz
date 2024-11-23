@@ -6,7 +6,7 @@ import './globals.css';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'Blue Chips Trade',
+  title: 'Afribiz Trade Investment',
   description: 'Effortlessly increase your trading potential',
 };
 

@@ -9,7 +9,7 @@ export default function Logo() {
       alt='Art Chain Market Logo'
       width={80}
       height={80}
-      className='rounded-xl p-1 bg-white border border-gray-100'
+      className='rounded-xl p-1 bg-primary border border-gray-100'
     />
   );
 }

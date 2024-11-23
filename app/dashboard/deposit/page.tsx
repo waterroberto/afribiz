@@ -184,7 +184,7 @@ function Deposit() {
         <Card>
           <div className='flex justify-between items-center'>
             <h5 className='text-gray-700 text-xl font-bold'>Recent Deposit</h5>
-            <span className=' p-1 px-2 text-sm rounded-md border border-primary text-primary'>
+            <span className=' p-1 px-2 text-sm rounded-md border border-primary text-neutral'>
               {userData?.deposits.length}
             </span>
           </div>

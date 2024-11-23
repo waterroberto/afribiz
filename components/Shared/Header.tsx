@@ -46,18 +46,18 @@ export default function Header({
 
   return (
     <div
-      className={`p-4 flex items-center justify-between md:px-8 fixed top-0 left-0 w-full z-20 bg-white ${
+      className={`p-4 flex items-center justify-between md:px-8 fixed top-0 left-0 w-full z-20 bg-primary ${
         isOpen ? 'lg:left-[16.66%] lg:w-5/6' : 'lg:left-[8.33%] lg:w-11/12'
       }`}
     >
       <div className='flex items-center gap-8'>
         <button
-          className='font-bold capitalize text-2xl text-gray-700'
+          className='font-bold capitalize text-2xl text-neutral'
           onClick={toggleSidebar}
         >
           <CgMenu />
         </button>
-        <p className='font-medium text-lg capitalize text-gray-700'>
+        <p className='font-medium text-lg capitalize text-neutral'>
           {currentPage}
         </p>
       </div>

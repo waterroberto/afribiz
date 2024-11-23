@@ -60,7 +60,7 @@ export default function TradingPage() {
           <Link href='/dashboard/trading/signal'>
             <Card>
               <div className='flex items-center flex-col justify-center gap-2'>
-                <TbChartCandle className='text-5xl text-primary' />
+                <TbChartCandle className='text-5xl text-neutral' />
                 <p className='text-xl'>Signal Trading</p>
               </div>
             </Card>

@@ -40,7 +40,7 @@ export default function DashboardLayout({
         <Meta />
         <div className='grid grid-cols-12 bg-gray-100 relative min-h-screen'>
           <div
-            className={`bg-white duration-500 transition-all border-r-[1px] border-r-gray-50 w-0 h-0 ${
+            className={`bg-primary duration-500 transition-all border-r-[1px] border-r-gray-50 w-0 h-0 ${
               sidebarOpen ? 'lg:col-span-2' : 'lg:col-span-1'
             } `}
           >
@@ -51,12 +51,12 @@ export default function DashboardLayout({
             />
           </div>
           <div
-            className={`duration-500 col-span-12 py-24 min-h-screen p-4 md:px-8 xl:px-16  ${
+            className={`duration-500 bg-primary col-span-12 py-24 min-h-screen p-4 md:px-8 xl:px-16  ${
               sidebarOpen ? 'lg:col-span-10' : 'lg:col-span-11'
             }`}
           >
             <Header isOpen={sidebarOpen} toggleSidebar={handleToggleSidebar} />
-            <div className='w-full max-w-7xl mx-auto'>
+            <div className='w-full max-w-7xl mx-auto bg-primary'>
               {children}
               <div className='mt-8'>
                 {/* <GetSupport /> */}

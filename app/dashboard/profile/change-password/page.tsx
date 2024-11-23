@@ -52,7 +52,7 @@ function ChangePassword() {
     <Card>
       <div className='flex items-center gap-4 p-3'>
         <Link href={``} onClick={() => router.back()} className=''>
-          <FiArrowLeft fontSize={30} className='text-primary' />
+          <FiArrowLeft fontSize={30} className='text-neutral' />
         </Link>
         <div className='flex flex-col items-start gap-1'>
           <h3 className='text-lg font-bold-extra'>Security</h3>

@@ -28,7 +28,7 @@ export default function Table(props: TableProps) {
     <div className='relative overflow-hidden border border-gray-200 rounded-xl'>
       {loading && (
         <div
-          className={`mx-2 rounded-none w-full absolute left-0 top-0 bottom-0 right-0 h-full bg-white/10 backdrop-blur-[2px] z-10 flex items-center justify-center`}
+          className={`mx-2 rounded-none w-full absolute left-0 top-0 bottom-0 right-0 h-full bg-primary/10 backdrop-blur-[2px] z-10 flex items-center justify-center`}
         >
           <Loader />
         </div>

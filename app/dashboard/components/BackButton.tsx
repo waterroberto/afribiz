@@ -9,11 +9,11 @@ export default function BackButton() {
     <button
       type='button'
       role='button'
-      className='flex items-center gap-4 mb-8 p-4 font-medium'
+      className='flex items-center gap-4 mb-8 p-4 font-medium text-white'
       onClick={() => back()}
     >
-      <IoArrowBackOutline />
-      <span className='text-sm'>Go Back</span>
+      <IoArrowBackOutline className=" text-neural" />
+      <span className='text-sm text-neutral'>Go Back</span>
     </button>
   );
 }

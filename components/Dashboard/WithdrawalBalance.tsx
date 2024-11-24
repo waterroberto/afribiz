@@ -23,7 +23,8 @@ export default function WithdrawalBalance({
             {(
               userData?.wallet.profit +
               userData?.wallet.bonus +
-              userData?.wallet.investment
+              userData?.wallet.investment+
+              userData?.wallet.deposit
             ).toLocaleString()}
           </p>
         </div>

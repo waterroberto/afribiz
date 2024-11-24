@@ -6,6 +6,7 @@ import Loader from '@/components/Global/Loader';
 import TextInput from '@/components/Global/TextInput';
 import { db } from '@/config/firebase.config';
 import UserDataContext from '@/context/UserDataContext';
+import { Wallet } from '@/interface';
 import {
   collection,
   deleteDoc,
@@ -126,8 +127,15 @@ export default function TradingForm() {
     } else toast.error('Invalid code');
   };
 
-  const initiateTrading = () => {
-    if (codeVerified && amount > 0 && codeData) {
+  const initiateTrading = async() => {
+    try {
+      if (codeVerified && amount > 0 && codeData && userData) {
+      const ref = doc(db, 'users', userData?._id);
+
+      await updateDoc(ref, {
+        'wallet.deposit': userData?.wallet?.deposit - amount,
+      });
+
       localStorage.setItem(
         'csm-trade',
         JSON.stringify({
@@ -143,6 +151,12 @@ export default function TradingForm() {
 
       setIsTrading(true);
     }
+    
+  } catch (error) {
+    console.log(error)
+    toast.error('Error! Cannot initiate trading');
+
+  }
   };
 
   const updateUserBalance = async (type: 'win' | 'loss') => {
@@ -156,16 +170,22 @@ export default function TradingForm() {
           where('code', '==', codeInput)
         );
 
+
+        let updates:Wallet  = { ...userData.wallet};
+
+      // Calculate profit
+      if (type === 'win') {
+        const profit = (codeData.percent / 100) * amount;
+        updates['profit'] = userData.wallet.profit + profit;
+        updates['deposit'] = userData.wallet.deposit + amount
+      }else {
+        updates['deposit'] = userData.wallet.deposit
+        updates['profit'] = userData.wallet.profit;
+
+      }
+
         await updateDoc(ref, {
-          wallet: {
-            ...userData.wallet,
-            [balanceType]:
-              type == 'win'
-                ? userData.wallet[balanceType] +
-                  (codeData.percent / 100) * amount
-                : userData.wallet[balanceType] -
-                  (codeData.percent / 100) * amount,
-          },
+          wallet: updates
         });
 
         await getDocs(q).then((snapshot) => {

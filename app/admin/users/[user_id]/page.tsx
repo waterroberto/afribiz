@@ -375,10 +375,10 @@ const UserDetails = () => {
 
                 updateDoc(userRef, {
                   [index]: [...filtered, updated],
-                  // depositBalance:
-                  //   status === 'declined'
-                  //     ? res.data().depositBalance + amount
-                  //     : res.data().depositBalance,
+                  "wallet.deposit":
+                    status === 'approved'
+                      ? res.data().wallet.deposit + amount
+                      : res.data().depositBalance,
                 })
                   .then(() => {
                     updateDoc(docRef, {

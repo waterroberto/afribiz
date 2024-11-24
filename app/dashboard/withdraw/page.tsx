@@ -62,9 +62,10 @@ export default function Withdraw() {
     e.preventDefault();
 
     const codesRef = collection(db, 'withdrawalCode');
+    console.log(userData.wallet.assest, "adfsdfasdf")
 
     if (userData) {
-      if (!(+amount > userData[asset])) {
+      if (!(+amount > userData.wallet[asset])) {
         const data: IWITHDRAWAL = {
           _id: uuidv4(),
           userId: userData._id,
@@ -215,7 +216,7 @@ export default function Withdraw() {
       {modalOpen && (
         <Card>
           <div className='my-6'>
-            <label htmlFor='balanceType' className='text-sm text-gray-600 mb-2'>
+            <label htmlFor='balanceType' className='text-sm text-white mb-2'>
               Withdraw from:
             </label>
             <select
@@ -225,12 +226,13 @@ export default function Withdraw() {
                 setAsset(e.target.value.trim() as WithdrawalAssetType)
               }
               required
+              className=' bg-inherit text-neutral'
             >
-              <option value='capital' defaultChecked>
+              <option value='capital' defaultChecked className=" bg-inherit">
                 Capital ( {userData?.currency}
                 {userData?.wallet.deposit.toLocaleString()})
               </option>
-              <option value='profit'>
+              <option value='profit' className="bg-inherit">
                 Profit ( {userData?.currency}
                 {userData?.wallet.profit.toLocaleString()})
               </option>
@@ -240,7 +242,7 @@ export default function Withdraw() {
           <div className='my-6'>
             <label
               htmlFor='paymentMethod'
-              className='text-sm text-gray-600 mb-2'
+              className='text-sm text-white mb-2'
             >
               Payment Method
             </label>
@@ -249,6 +251,8 @@ export default function Withdraw() {
               id='paymentMethod'
               onChange={(e) => setPaymentMethod(e.target.value.trim())}
               required
+              className=' bg-inherit text-neutral'
+
             >
               <option value='bank' defaultChecked>
                 Bank
@@ -260,7 +264,7 @@ export default function Withdraw() {
           </div>
           {/*  */}
           <div className='my-6'>
-            <label htmlFor='amount' className='text-sm text-gray-600 mb-2'>
+            <label htmlFor='amount' className='text-sm text-white mb-2'>
               Amount
             </label>
             <TextInput
@@ -275,7 +279,7 @@ export default function Withdraw() {
               <div className='my-6'>
                 <label
                   htmlFor='accountNumber'
-                  className='text-sm text-gray-600 mb-2'
+                  className='text-sm text-white mb-2'
                 >
                   Account Number
                 </label>
@@ -290,7 +294,7 @@ export default function Withdraw() {
               <div className='my-6'>
                 <label
                   htmlFor='bankName'
-                  className='text-sm text-gray-600 mb-2'
+                  className='text-sm text-white mb-2'
                 >
                   Bank Name
                 </label>
@@ -307,7 +311,7 @@ export default function Withdraw() {
 
           {paymentMethod !== 'bank' && (
             <div className='my-6'>
-              <label htmlFor='email' className='text-sm text-gray-600 mb-2'>
+              <label htmlFor='email' className='text-sm text-white mb-2'>
                 Email
               </label>
               <TextInput
@@ -321,7 +325,7 @@ export default function Withdraw() {
           {/*  */}
           {paymentMethod === 'binance' && (
             <div className='my-6'>
-              <label htmlFor='binanceId' className='text-sm text-gray-600 mb-2'>
+              <label htmlFor='binanceId' className='text-sm text-white mb-2'>
                 Binance ID
               </label>
               <TextInput
@@ -336,7 +340,7 @@ export default function Withdraw() {
           <div className='my-6'>
             <label
               htmlFor='accountHolder'
-              className='text-sm text-gray-600 mb-2'
+              className='text-sm text-white mb-2'
             >
               Account Holder Name
             </label>

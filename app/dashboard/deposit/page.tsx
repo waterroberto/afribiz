@@ -224,8 +224,8 @@ function Deposit() {
             />
           </div>
 
-          <div className=' flex flex-col gap-2'>
-            <label htmlFor='selectAsset'>Select Asset</label>
+          <div className=' flex flex-col gap-2 text-white'>
+            <label htmlFor='selectAsset' className=" text-white">Select Asset</label>
             <select
               onChange={formik.handleChange}
               name='asset'
@@ -246,14 +246,15 @@ function Deposit() {
               <div>
                 <Card>
                   <div className='flex flex-col gap-3 text-gray-700 mb-4'>
-                    <p className=' text-sm capitalize'>Wallet Address: </p>
-                    <p className='text-sm'>
+                    <p className=' text-sm capitalize text-neutral'>Wallet Address: </p>
+                    <p className='text-sm text-white'>
                       {cryptoAdresses[formik.values.asset]}
                     </p>
                   </div>
 
                   <Button
                     type='button'
+                    color="primary_2"
                     variant='outlined'
                     onClick={() => {
                       window?.navigator?.clipboard
@@ -282,7 +283,7 @@ function Deposit() {
 
           {formik.values.asset && (
             <div className=' flex flex-col gap-2'>
-              <label htmlFor='proofOfPayment' className='block mb-4'>
+              <label htmlFor='proofOfPayment' className='block mb-4 text-white'>
                 Enter Proof Of Payment
               </label>
 

@@ -118,7 +118,7 @@ export interface Manager {
   name: string;
 }
 
-interface Wallet {
+export interface Wallet {
   [key: string]: number;
   bonus: number;
   deposit: number;

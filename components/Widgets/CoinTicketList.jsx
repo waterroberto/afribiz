@@ -9,6 +9,7 @@ export default function CoinTicketList() {
         coin-id='bitcoin'
         currency='usd'
         locale='en'
+        background-color='#090d1f'
       ></coingecko-coin-market-ticker-list-widget>
     </div>
   );

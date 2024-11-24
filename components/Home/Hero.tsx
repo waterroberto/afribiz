@@ -1,5 +1,5 @@
 import bg from '@/public/assets/trading-img.jpg';
-import heroImage from '@/public/screenshot.png';
+import heroImage from '@/assets/localhost_3000_dashboard_deposit (1).png';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';

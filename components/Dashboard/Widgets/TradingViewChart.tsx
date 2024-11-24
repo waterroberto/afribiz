@@ -7,9 +7,11 @@ export default function TradingViewChart() {
     <div className='my-4'>
       <AdvancedChart
         widgetProps={{
-          theme: 'light',
+          theme: 'dark',
         }}
       />
     </div>
   );
 }
+
+

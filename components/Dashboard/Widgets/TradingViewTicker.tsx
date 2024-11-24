@@ -8,7 +8,7 @@ export default function TradingViewTicker() {
       <TickerTape
         widgetProps={{
           showSymbolLogo: false,
-          colorTheme: 'light',
+          colorTheme: 'dark',
         }}
       />
     </div>

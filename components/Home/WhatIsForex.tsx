@@ -7,35 +7,24 @@ export default function WhatIsForex() {
         About <span className='text-neutral'>Afribiz Trade Investment</span>
       </p>
       <div className='grid grid-cols-1 gap-8 md:grid-cols-2'>
+        <div className='md:p-4'>
+          <p className='text-2xl font-semibold text-neutral mb-8'>
+            Who we are. What we do.
+          </p>
+          <p className='md:text-lg text-white'>
+            For decades, the forex market was dominated by a privileged few with insider knowledge. But our platform is revolutionizing the industry, giving prospective investors the chance to realize their investment dreams. Grow your trade account and let the internet work for you, freeing you from the constraints of a 9-5 job. The foreign exchange market operates 24/7, and with our user-friendly platform, you can make it work for you
+            <br />
+            We specialize in trading and ensuring profitable transactions in Forex, Commodities (stocks), Indices, and more. Our team manages losses and oversees the trading process to achieve the average required monthly ROI for your selected package, facilitating your success in the global market.
+            <br />
+            Our elite trade development team and account managers are handpicked experts with over 7 years of experience, having traded for several of the most reputable brokers. Join over 4,000 satisfied investors worldwide who trust our services.
+          </p>
+        </div>
         <iframe
           width='420'
           height='315'
           className='w-full max-w-[1024px] mx-auto block h-[315px] sm:h-[400px] md:h-[512px] rounded-2xl'
           src='https://www.youtube.com/embed/GmOzih6I1zs?autoplay=1'
         ></iframe>
-        <div className='md:p-4'>
-          <p className='text-2xl font-semibold text-neutral mb-8'>
-            Who we are. What we do.
-          </p>
-          <p className='md:text-lg text-white'>
-            For decades, the dominant players in forex have been the privileged,
-            in-the-know few. But our platform is disrupting the entire industry
-            and equipping prospective investors with the opportunity to
-            actualize their investment dreams. Grow a trade account and make
-            internet work for you, relieve you from 9-5 jobs the foriegn
-            exchange market work for you 24/7 with our minimalist platform.
-            <br />
-            We trade and ensure the coverage of transactions profitably in
-            Forex, Commodities(stocks), and Indices etc. We manage losses and
-            trading processes to meet up with the average required monthly quota
-            ROI of your desired package and facilitation of the worldwide maket.
-            <br />
-            Our elite trade development team and account managers are handpicked
-            from the best and have over 7 years of experience, and have traded
-            for several of the most reputable brokers. Join over 4000 investors
-            from all over the world satisfied with our services.
-          </p>
-        </div>
       </div>
     </section>
   );

@@ -190,7 +190,7 @@ function Deposit() {
             </span>
           </div>
 
-          <div className='text-gray-500 flex flex-col justify-center items-center my-7 gap-5'>
+          <div className='text-white flex flex-col justify-center items-center my-7 gap-5'>
             <ImFilesEmpty fontSize={100} />
             <p>No Deposit Yet</p>
           </div>
@@ -212,14 +212,14 @@ function Deposit() {
         title='Deposit'
       >
         <form onSubmit={formik.handleSubmit} className=' flex flex-col gap-5'>
-          <div className=' flex flex-col gap-2'>
+          <div className=' flex flex-col gap-2 text-white'>
             <label htmlFor='amount'>Enter Amount</label>
             <TextInput
               name='amount'
               id='amount'
               onChange={formik.handleChange}
               value={formik.values.amount}
-              placeholder='Enter Amount'
+              placeholder={`Enter Amount in ${userData?.currency}`}
               type='number'
             />
           </div>
@@ -230,6 +230,7 @@ function Deposit() {
               onChange={formik.handleChange}
               name='asset'
               id='selectAsset'
+              className=' bg-inherit'
             >
               <option className=' text-white' defaultChecked value=''>
                 Select Asset
@@ -270,7 +271,7 @@ function Deposit() {
                 </Card>
 
                 <Card>
-                  <p className='text-gray-500 text-sm'>
+                  <p className='text-white text-sm'>
                     NOTE: Sending any other coins other than the selected, may
                     result in permanent loss
                   </p>

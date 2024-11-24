@@ -32,7 +32,7 @@ export default function useGetAllUsers() {
   useEffect(() => {
     const qry = query(
       collection(db, 'users'),
-      where('isAdmin', '==', false),
+      // where('isAdmin', '==', false),
       orderBy('timestamp'),
       startAt(first)
     );

@@ -52,7 +52,7 @@ export default function AdminLayout({
     return (
       <>
         <Meta />
-        <div className='grid grid-cols-12 bg-gray-100 relative min-h-screen'>
+        <div className='grid grid-cols-12 bg-primary_2 relative min-h-screen'>
           <div
             className={`bg-primary duration-500 transition-all border-r-[1px] border-r-gray-50 w-0 h-0 ${
               sidebarOpen ? 'lg:col-span-2' : 'lg:col-span-1'

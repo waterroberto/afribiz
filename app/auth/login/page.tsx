@@ -64,10 +64,10 @@ const LoginPage = () => {
 
   return (
     <>
-      <div className='shadow-md rounded-xl p-6 w-full max-w-lg mt-8'>
+      <div className='shadow-md rounded-xl p-6 w-full max-w-lg mt-8 bg-primary_2'>
         <div className='mb-4'>
-          <p className='text-neutral font-bold text-2xl'>Sign In</p>
-          <p className='text-gray-600 text-sm'>
+          <p className='text-white font-bold text-2xl'>Sign In</p>
+          <p className='text-neutral text-sm'>
             Login to your Afribiz Trade Investment account
           </p>
         </div>
@@ -75,7 +75,7 @@ const LoginPage = () => {
           <div className='w-full mb-4 flex flex-col gap-3'>
             <label
               htmlFor='email'
-              className='mb-2 font-medium text-sm text-gray-600'
+              className='mb-2 font-medium text-sm text-white'
             >
               Email Address *
             </label>
@@ -83,7 +83,7 @@ const LoginPage = () => {
               type='email'
               id='email'
               placeholder=''
-              className='px-4 py-3 outline-none border border-gray-100 w-full rounded-md text-gray-600 bg-[#ffffff14]'
+              className='px-4 py-3 outline-none border border-gray-100 w-full rounded-md text-white bg-[#ffffff14]'
               required
               onChange={handleChange}
               error={errors.email}
@@ -93,7 +93,7 @@ const LoginPage = () => {
           <div className='w-full mb-4 flex flex-col gap-3 relative'>
             <label
               htmlFor='password'
-              className='mb-2 font-medium text-sm text-gray-600'
+              className='mb-2 font-medium text-sm text-white'
             >
               Password *
             </label>
@@ -102,7 +102,7 @@ const LoginPage = () => {
               id='password'
               name='password'
               placeholder=''
-              className='px-4 py-3 outline-none border border-gray-100 w-full rounded-md text-gray-600 bg-[#ffffff14]'
+              className='px-4 py-3 outline-none border border-gray-100 w-full rounded-md text-white bg-[#ffffff14]'
               required
               onChange={handleChange}
               rightIcon={<AiOutlineEye />}
@@ -114,7 +114,7 @@ const LoginPage = () => {
             Sign In
           </Button>
         </form>
-        <p className='mt-4 text-dark text-center text-sm'>
+        <p className='mt-4 text-neutral text-center text-sm'>
           Don`t have an account?{' '}
           <Link href='/auth/register' className='text-[#0177FB]  font-semibold'>
             Create Account

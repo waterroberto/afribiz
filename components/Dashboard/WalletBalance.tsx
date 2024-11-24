@@ -19,8 +19,8 @@ export default function WalletBalance() {
   if (!userData) return;
 
   return (
-    <div className='rounded-3xl bg-primary-2 p-8 min-h-72 py-12 md:p-12  text-dark welcome'>
-      <div className='flex items-center gap-4 mb-8 text-gray-600'>
+    <div className='rounded-3xl bg-primary-2 p-4 min-h-68 py-8 md:p-12  text-dark welcome'>
+      <div className='flex items-center gap-4 mb-4 text-gray-600'>
         <p className='text-lg font-bold text-white'>Available Balance</p>
         <button role='button' onClick={toggleShowBalance} className='text-2xl'>
           {showBalance ? <FaEyeSlash /> : <FaEye />}

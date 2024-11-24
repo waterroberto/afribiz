@@ -69,12 +69,12 @@ function Wallets() {
     <div className='min-h-screen'>
       <Card>
         <div className=' border-b p-4'>
-          <h2 className=" text-lg text-gray-700 font-bold">Wallet Addresses & QR Codes</h2>
-          <p className="text-sm text-gray-700 font-bold">Change wallet addresses here, and their QR code.</p>
+          <h2 className=" text-lg text-white font-bold">Wallet Addresses & QR Codes</h2>
+          <p className="text-sm text-white font-bold">Change wallet addresses here, and their QR code.</p>
         </div>
 
         <form onSubmit={formik.handleSubmit}>
-           <p className='text-xl font-bold mb-4'>Wallet Addresses</p>
+           <p className='text-xl font-bold mb-4 text-neutral'>Wallet Addresses</p>
 
             <div className='text-white grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'>
               <div className='w-full col-span-1 my-4'>
@@ -160,7 +160,7 @@ function Wallets() {
               </Button>
               {walletUpdated && changeWalletAddressStatus && (
                 <Button
-                  color={`#1bea93`}
+                  color='primary_2'
                   type='submit'
                   // className={`btn p-4 px-8 text-white bg-primary`}
                   // onClick={updateWalletAddresses}

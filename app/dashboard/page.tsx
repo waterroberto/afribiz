@@ -11,11 +11,11 @@ export default function Dashboard() {
     <>
       <TradingViewTicker />
       <WalletBalance />
-      <div className="flex flex-col sm:flex-row items-center w-full gap-3 p-2">
-        <TraderLevel />
-        <TradingSingleTicker/>
-      </div>
       <AccountBalance />
+      <div className="flex flex-col sm:flex-row items-center w-full gap-3 p-2">
+        <TradingSingleTicker/>
+        <TraderLevel />
+      </div>
       <TradingViewChart />
     </>
   );

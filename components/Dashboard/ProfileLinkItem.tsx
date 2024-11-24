@@ -14,7 +14,7 @@ export default function ProfileLinkItem({
   return (
     <Link
       href={pageUrl}
-      className='flex justify-between items-center p-3 capitalize bg-gray-200 rounded-lg text-sm text-neutral font-medium my-2'
+      className='flex justify-between items-center p-3 capitalize bg-primary_2 rounded-lg text-sm text-neutral font-medium my-2'
     >
       {pageName}
       <span className='text-2xl'>{icon}</span>

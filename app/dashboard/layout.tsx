@@ -4,6 +4,7 @@ import Referral from '@/components/Dashboard/Referral';
 import Loader from '@/components/Global/Loader';
 import Meta from '@/components/Global/Meta';
 import Header from '@/components/Shared/Header';
+import '../globals.css';
 import AuthContext from '@/context/AuthContext';
 import UserDataContext from '@/context/UserDataContext';
 import { user_links } from '@/static';

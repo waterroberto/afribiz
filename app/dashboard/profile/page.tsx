@@ -14,7 +14,7 @@ export default function DashboardProfile() {
 
   return (
     <div>
-      <div className='text-white p-3 bg-dark flex flex-col md:flex-row items-start justify-between gap-2 md:items-center rounded-xl'>
+      <div className='text-white p-3 bg-primary_3 flex flex-col md:flex-row items-start justify-between gap-2 md:items-center rounded-xl'>
         <div className='flex items-center gap-8'>
           <Logo />
           <div className='flex flex-col gap-1 items-start'>

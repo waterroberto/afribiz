@@ -54,9 +54,9 @@ function ChangePassword() {
         <Link href={``} onClick={() => router.back()} className=''>
           <FiArrowLeft fontSize={30} className='text-neutral' />
         </Link>
-        <div className='flex flex-col items-start gap-1'>
+        <div className='flex flex-col items-start gap-1 text-white'>
           <h3 className='text-lg font-bold-extra'>Security</h3>
-          <p className='text-xs capitalize text-gray-600'>
+          <p className='text-xs capitalize text-white'>
             change your password{' '}
           </p>
         </div>
@@ -64,7 +64,7 @@ function ChangePassword() {
       {/* form */}
       <form onSubmit={handleSubmit} className=' p-3 flex flex-col gap-5'>
         <div className='flex flex-col gap-3'>
-          <label htmlFor='oldPassword'>Old Password</label>
+          <label className=" text-neutral" htmlFor='oldPassword'>Old Password</label>
           <TextInput
             type={oldPassword ? 'text' : 'password'}
             name='oldPassword'
@@ -77,7 +77,7 @@ function ChangePassword() {
         </div>
 
         <div className='flex flex-col gap-3'>
-          <label htmlFor='newPassword'>New Password</label>
+          <label className=" text-neutral" htmlFor='newPassword'>New Password</label>
           <TextInput
             type={newPassword ? 'text' : 'password'}
             name='newPassword'
@@ -90,7 +90,7 @@ function ChangePassword() {
         </div>
 
         <div className='flex flex-col gap-3'>
-          <label htmlFor='confirmPassword'>Confirm Password</label>
+          <label className=" text-neutral" htmlFor='confirmPassword'>Confirm Password</label>
           <TextInput
             type={confirmPassword ? 'text' : 'password'}
             name='confirmPassword'
@@ -102,7 +102,7 @@ function ChangePassword() {
           />
         </div>
 
-        <Button block type='submit'>
+        <Button color="primary_2" block type='submit'>
           Change Password
         </Button>
       </form>

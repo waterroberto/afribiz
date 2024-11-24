@@ -110,13 +110,13 @@ const LoginPage = () => {
               error={errors.password}
             />
           </div>
-          <Button type='submit' loading={formik.isSubmitting} block>
+          <Button color="primary_2" type='submit' loading={formik.isSubmitting} block>
             Sign In
           </Button>
         </form>
         <p className='mt-4 text-dark text-center text-sm'>
           Don`t have an account?{' '}
-          <Link href='/auth/register' className='text-neutral font-semibold'>
+          <Link href='/auth/register' className='text-[#0177FB]  font-semibold'>
             Create Account
           </Link>
         </p>

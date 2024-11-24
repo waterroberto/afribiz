@@ -49,8 +49,8 @@ export default function OurServices() {
         <span className='mb-4 text-sm p-2 px-4 inline-block border border-gray-600 rounded-full text-gray-600'>
           What we offer
         </span>
-        <p className='gradient-text text-2xl sm:text-4xl lg:text-5xl font-bold text-center'>
-          Join <span className='text-dark'>Afribiz Trade Investment</span>
+        <p className='gradient-text text-2xl sm:text-4xl lg:text-5xl font-bold text-center text-white'>
+          Join <span className='text-neutral'>Afribiz Trade Investment</span>
         </p>
       </div>
 
@@ -58,17 +58,17 @@ export default function OurServices() {
         {features.map((feature) => (
           <div
             key={feature.title}
-            className='flex items-center gap-4 bg-blue-50 p-8 rounded-2xl border border-gray-100'
+            className='flex items-center gap-4 bg-primary_3 p-8 rounded-2xl border border-gray-100'
             data-aos='fade-up'
           >
             <div className='h-20 w-20 border border-primary rounded-2xl text-neutral text-4xl flex items-center justify-center'>
               {feature.icon}
             </div>
             <div className='flex-1'>
-              <p className='font-bold text-lg text-blue-900 capitalize'>
+              <p className='font-bold text-lg text-neutral capitalize'>
                 {feature.title}
               </p>
-              <p className='text-gray-500'>{feature.body}</p>
+              <p className='text-white'>{feature.body}</p>
             </div>
           </div>
         ))}

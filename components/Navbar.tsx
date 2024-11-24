@@ -31,7 +31,7 @@ const Navbar = () => {
             <li key={link.name}>
               <Link
                 href={link.url}
-                className='text-gray-700 font-medium capitalize'
+                className='text-white font-medium capitalize'
               >
                 {link.name}
               </Link>
@@ -41,10 +41,10 @@ const Navbar = () => {
 
         <div className='items-center gap-4 hidden sm:flex'>
           <Link href='/auth/login'>
-            <Button variant='outlined'>Login</Button>
+            <Button color='white' variant='outlined'>Login</Button>
           </Link>
           <Link href='/auth/register'>
-            <Button>Create Account</Button>
+            <Button color='primary_2'>Create Account</Button>
           </Link>
         </div>
 
@@ -66,7 +66,7 @@ const Navbar = () => {
           <li key={link.name} className='py-4 border-b w-full'>
             <Link
               href={link.url}
-              className='text-[13px] text-gray-700 font-semibold uppercase'
+              className='text-[13px] text-white font-semibold uppercase'
             >
               {link.name}
             </Link>

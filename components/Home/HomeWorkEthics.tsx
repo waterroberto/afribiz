@@ -25,6 +25,16 @@ const HomeWorkEthics = () => {
         </p>
         {/*   */}
         <div className='grid grid-cols-1 gap-8 md:grid-cols-2'>
+          <div className='zoom w-full h-72 md:h-96' data-aos='flip-left'>
+            <Image
+              src={anaysis_background}
+              alt='Stocks market'
+              className='rounded-3xl child'
+              layout='fill'
+              objectFit='cover'
+              objectPosition='center'
+            />
+          </div>
           <div className='content w-full h-full'>
             <div
               className='flex items-center justify-start gap-4 mt-8 md:mb-12'
@@ -72,16 +82,6 @@ const HomeWorkEthics = () => {
                 </p>
               </div>
             </div>
-          </div>
-          <div className='zoom w-full h-72 md:h-96' data-aos='flip-left'>
-            <Image
-              src={anaysis_background}
-              alt='Stocks market'
-              className='rounded-3xl child'
-              layout='fill'
-              objectFit='cover'
-              objectPosition='center'
-            />
           </div>
         </div>
       </div>

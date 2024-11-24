@@ -101,7 +101,7 @@ export default function TransactionHistory({
             <Button
               size='small'
               variant='outlined'
-              color='dark'
+              color='tertiary'
               rounded
               onClick={() => {
                 openModal();

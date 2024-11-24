@@ -361,13 +361,13 @@ const Register = () => {
             </p>
           </div>
 
-          <Button type='submit' loading={formik.isSubmitting} block>
+          <Button type='submit' color="primary_2" loading={formik.isSubmitting} block>
             Register
           </Button>
         </form>
         <p className='mt-4 text-dark text-center text-sm'>
           Already have an account?{' '}
-          <Link href='/auth/login' className='text-neutral font-semibold'>
+          <Link href='/auth/login' className='text-[#0177FB] font-semibold'>
             Sign in instead
           </Link>
         </p>

@@ -191,8 +191,8 @@ export default function Withdraw() {
           </p>
           <p className='mb-8'>
             Contact Support:{' '}
-            <a href='mailto:support@bluechipstrade.online'>
-              <b className='text-neutral'> support@bluechipstrade.online </b>
+            <a href='mailto:support@aribixtradeonline'>
+              <b className='text-neutral'> support@aribixtradeonline </b>
             </a>{' '}
             to get your <b>VAT Code.</b>
           </p>

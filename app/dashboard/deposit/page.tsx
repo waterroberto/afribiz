@@ -128,6 +128,7 @@ function Deposit() {
       setIsLoading(true);
 
       if (userData)
+        console.log(body)
         await UserService.sendDepositRequest(userData!?._id, body).then(() => {
           toast.success('Deposit placed.');
           setModal(false);
@@ -139,7 +140,7 @@ function Deposit() {
       setIsLoading(false);
     } catch (error) {
       console.log(error);
-
+      console.log("not working")
       setIsLoading(false);
       toast.error('Error! Cannot place deposit ');
     }
@@ -158,7 +159,7 @@ function Deposit() {
       <TradingViewTicker />
       <div className='grid md:grid-cols-2 items-center gap-4 max-w-2xl mt-8 mb-16 text-white'>
         <div
-          className='p-8 bg-dark border border-gray-100 rounded-3xl'
+          className='p-8 bg-primary_3 border border-gray-100 rounded-3xl'
           onClick={() => setModal(!modal)}
         >
           <p className='text-xl font-bold'>Fund Via Crypto</p>

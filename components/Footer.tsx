@@ -33,7 +33,7 @@ const Footer = () => {
             Contact Us
           </p>
           <div>
-            <p>support@bluechipstrade.online</p>
+            <p>support@aribixtradeonline</p>
             <p>HPQCH, 11 Wilson St, Montreal Canada.</p>
           </div>
         </div>

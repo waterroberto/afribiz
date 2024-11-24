@@ -72,8 +72,8 @@ function Profile() {
             <FiArrowLeft fontSize={30} className='text-neutral' />
           </Link>
           <div className='flex flex-col items-start gap-1'>
-            <p className=' text-lg font-bold-extra'>Profile Setting</p>
-            <p className=' text-xs capitalize text-gray-600'>
+            <p className=' text-lg font-bold-extra text-white'>Profile Setting</p>
+            <p className=' text-xs capitalize text-white'>
               Edit your profile details
             </p>
           </div>
@@ -83,7 +83,7 @@ function Profile() {
           className=' p-3 flex flex-col gap-5'
         >
           <div className='flex flex-col gap-3'>
-            <label htmlFor='fullname'>Full Name</label>
+            <label className=" text-neutral" htmlFor='fullname'>Full Name</label>
             <TextInput
               name='fullname'
               id='fullname'
@@ -93,7 +93,7 @@ function Profile() {
             />
           </div>
           <div className='flex flex-col gap-3'>
-            <label htmlFor='email'>Email</label>
+            <label className=" text-neutral" htmlFor='email'>Email</label>
             <TextInput
               name='email'
               id='email'
@@ -103,7 +103,7 @@ function Profile() {
             />
           </div>
           <div className='flex flex-col gap-3'>
-            <label htmlFor='phone'>Phone Number</label>
+            <label className=" text-neutral" htmlFor='phone'>Phone Number</label>
             <TextInput
               name='phone'
               id='phone'
@@ -113,14 +113,14 @@ function Profile() {
             />
           </div>
           {editState && (
-            <Button block type='submit'>
+            <Button color="primary" block type='submit'>
               Submit
             </Button>
           )}
           <Button
             block
             type='button'
-            color={editState ? 'secondary' : 'primary'}
+            color={editState ? 'secondary' : 'primary_2'}
             onClick={() => {
               if (editState) {
                 setEditState(false);

@@ -83,9 +83,9 @@ function NextOfKin() {
           <Link href={``} onClick={() => router.back()} className=''>
             <FiArrowLeft fontSize={30} className='text-neutral' />
           </Link>
-          <div className=' flex flex-col items-start gap-1'>
+          <div className=' flex flex-col items-start gap-1 text-white'>
             <h3 className=' text-lg font-bold-extra'>Next Of Kin</h3>
-            <p className=' text-xs capitalize text-gray-600'>
+            <p className=' text-xs capitalize text-white'>
               We will pass your investment to your next of kin incase life
               happens
             </p>
@@ -94,7 +94,7 @@ function NextOfKin() {
         {/* form */}
         <form onSubmit={handleSubmit} className=' p-3 flex flex-col gap-5'>
           <div className='flex flex-col gap-3'>
-            <label htmlFor='fullname'>Full Name</label>
+            <label className=" text-neutral" htmlFor='fullname'>Full Name</label>
             <TextInput
               name='name'
               id='fullname'
@@ -105,7 +105,7 @@ function NextOfKin() {
             />
           </div>
           <div className='flex flex-col gap-3'>
-            <label htmlFor='email'>Email</label>
+            <label className=" text-neutral" htmlFor='email'>Email</label>
             <TextInput
               name='email'
               id='email'
@@ -116,7 +116,7 @@ function NextOfKin() {
             />
           </div>
           <div className='flex flex-col gap-3'>
-            <label htmlFor='phone'>Phone Number</label>
+            <label className=" text-neutral" htmlFor='phone'>Phone Number</label>
             <TextInput
               name='phoneNumber'
               id='phone'
@@ -127,9 +127,9 @@ function NextOfKin() {
             />
           </div>
           <div className=' my-6'>
-            <h3 className=' text-lg font-bold-extra my-6'>Other Details</h3>
+            <h3 className=' text-lg font-bold-extra my-6 text-white'>Other Details</h3>
             <div className='flex flex-col gap-3'>
-              <label htmlFor='relationship'>Relationship</label>
+              <label className=" text-neutral" htmlFor='relationship'>Relationship</label>
               <TextInput
                 name='relationship'
                 id='relationship'
@@ -140,7 +140,7 @@ function NextOfKin() {
               />
             </div>
             <div className='flex flex-col gap-3 my-4'>
-              <label htmlFor='email'>Gender</label>
+              <label className=" text-neutral" htmlFor='email'>Gender</label>
               <TextInput
                 name='gender'
                 id='gender'
@@ -153,7 +153,7 @@ function NextOfKin() {
           </div>
 
           {editState && (
-            <Button block type='submit'>
+            <Button color="primary" block type='submit'>
               Submit
             </Button>
           )}
@@ -162,7 +162,7 @@ function NextOfKin() {
           <Button
             block
             type='button'
-            color={editState ? 'secondary' : 'primary'}
+            color={editState ? 'secondary' : 'primary_2'}
             onClick={() => {
               if (editState) {
                 setEditState(false);

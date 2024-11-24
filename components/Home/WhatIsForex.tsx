@@ -3,7 +3,7 @@ import React from 'react';
 export default function WhatIsForex() {
   return (
     <section className='p-8 py-24 bg-primary lg:px-24'>
-      <p className='text-3xl md:text-4xl font-bold text-gray-700 mb-16 text-center'>
+      <p className='text-3xl md:text-4xl font-bold text-white mb-16 text-center'>
         About <span className='text-neutral'>Afribiz Trade Investment</span>
       </p>
       <div className='grid grid-cols-1 gap-8 md:grid-cols-2'>
@@ -14,10 +14,10 @@ export default function WhatIsForex() {
           src='https://www.youtube.com/embed/GmOzih6I1zs?autoplay=1'
         ></iframe>
         <div className='md:p-4'>
-          <p className='text-2xl font-semibold text-gray-700 mb-8'>
+          <p className='text-2xl font-semibold text-neutral mb-8'>
             Who we are. What we do.
           </p>
-          <p className='md:text-lg text-gray-600'>
+          <p className='md:text-lg text-white'>
             For decades, the dominant players in forex have been the privileged,
             in-the-know few. But our platform is disrupting the entire industry
             and equipping prospective investors with the opportunity to

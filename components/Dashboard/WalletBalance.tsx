@@ -21,12 +21,12 @@ export default function WalletBalance() {
   return (
     <div className='rounded-3xl bg-primary-2 p-8 min-h-72 py-12 md:p-12  text-dark welcome'>
       <div className='flex items-center gap-4 mb-8 text-gray-600'>
-        <p className='text-lg font-bold'>Available Balance</p>
+        <p className='text-lg font-bold text-white'>Available Balance</p>
         <button role='button' onClick={toggleShowBalance} className='text-2xl'>
           {showBalance ? <FaEyeSlash /> : <FaEye />}
         </button>
       </div>
-      <p className='text-4xl lg:text-5xl my-4 font-bold max-w-2xl'>
+      <p className='text-4xl text-dark lg:text-5xl my-4 font-bold max-w-2xl'>
         {showBalance ? (
           <span>
             {userData?.currency}
@@ -41,7 +41,7 @@ export default function WalletBalance() {
           <span>{userData?.currency} *******</span>
         )}
       </p>
-      <p className='mb-2 text-sm text-gray-600'>{userData._id}</p>
+      <p className='mb-2 text-sm text-white'>{userData._id}</p>
       <div className='mt-4 flex flex-col sm:flex-row md:items-center gap-4'>
         <Link href='/dashboard/profile'>
           <Button

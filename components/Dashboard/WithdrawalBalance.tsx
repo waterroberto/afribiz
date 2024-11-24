@@ -16,7 +16,7 @@ export default function WithdrawalBalance({
   return (
     <Card>
       <div className='text-gray-700'>
-        <div className='p-8 flex items-center justify-center flex-col mb-8 bg-dark text-blue-50 rounded-xl'>
+        <div className='p-8 flex items-center justify-center flex-col mb-8 bg-primary_3 text-blue-50 rounded-xl'>
           <p>Available balance</p>
           <p className='text-4xl font-bold mt-2'>
             {userData?.currency}

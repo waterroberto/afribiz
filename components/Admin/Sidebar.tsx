@@ -55,7 +55,7 @@ export default function Sidebar({
                 className={clsx(
                   'my-1 py-3 flex gap-4 w-full h-10 items-center duration-500 rounded-md text-md',
                   pathname.trim() === link.page
-                    ? 'bg-primary-2 text-[#0177FB] bg-gray-50'
+                    ? ' text-[#0177FB] '
                     : 'text-neutral',
                   isOpen ? 'justify-start pl-6' : 'justify-center pl-0'
                 )}

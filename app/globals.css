@@ -18,10 +18,12 @@ html body {
 }
 
 @layer components {
+
   textarea,
   select {
     @apply h-full text-sm w-full font-light text-gray-500 focus:outline-none block appearance-none border border-gray-200 py-3 px-4 rounded-xl resize-none;
   }
+
   textarea {
     @apply min-h-32;
   }
@@ -39,14 +41,14 @@ html body {
 /* Skeleton Loader */
 .skeleton-loader {
   display: inline-block;
-  width: 100%; /* Adjust the width as needed */
-  min-height: 50px; /* Adjust the height as needed */
-  background: linear-gradient(
-    120deg,
-    rgb(219, 219, 219, 0.5) 25%,
-    rgb(232, 232, 232, 0.5) 50%,
-    rgb(234, 234, 234, 0.5) 85%
-  );
+  width: 100%;
+  /* Adjust the width as needed */
+  min-height: 50px;
+  /* Adjust the height as needed */
+  background: linear-gradient(120deg,
+      rgb(219, 219, 219, 0.5) 25%,
+      rgb(232, 232, 232, 0.5) 50%,
+      rgb(234, 234, 234, 0.5) 85%);
   background-size: 200% 100%;
   animation: pulse 3s infinite ease-in-out;
   border-radius: 0.5rem;
@@ -54,10 +56,12 @@ html body {
 }
 
 @keyframes pulse {
+
   0%,
   100% {
     background-position: 200% 0;
   }
+
   50% {
     background-position: -200% 0;
   }
@@ -92,10 +96,82 @@ html body {
 }
 
 .welcome {
-  background: linear-gradient(rgba(9, 22, 29, 0.1), rgba(9, 22, 29, 0.1)),
+  background: linear-gradient(rgba(9, 13, 31, 0.3), rgba(9, 13, 31, 0.6)),
     url('/assets/welcome.png') no-repeat center center/cover;
 }
 
 input {
   font-size: 16px !important;
+}
+
+/* .p-datatable-tbody,
+.p-datatable,
+.p-datatable-header, */
+/* .p-datatable-thead > tr > th {
+  background-color: #090D1F;
+}
+
+.p-datatable-thead {
+  background-color: #090D1F;
+}
+
+.p-datatable-table {
+  background-color: #090D1F;
+}
+
+.p-datatable{
+  background-color: #090D1F;
+} */
+/* Change background color of the entire DataTable */
+.p-datatable {
+  background-color: #090D1F;
+  /* Dark background color */
+}
+
+/* Change background color of the table header */
+.p-datatable-thead>tr>th {
+  background-color: #090D1F;
+  /* Slightly different background for the header */
+  color: #FFFFFF;
+  /* White text for better visibility */
+}
+
+/* Change background color of the table rows */
+.p-datatable-tbody>tr {
+  background-color: #090D1F;
+  /* Same dark background color for rows */
+  color: #FFFFFF;
+  /* White text for better visibility */
+}
+
+
+.p-datatable {
+  background-color: #090D1F !important;
+  /* Dark background color */
+}
+
+/* Change background color of the table header */
+.p-datatable-thead>tr>th {
+  background-color: #090D1F !important;
+  /* Slightly different background for the header */
+  color: #FFFFFF !important;
+  /* White text for better visibility */
+}
+
+/* Change background color of the table rows */
+.p-datatable-tbody>tr {
+  background-color: #090D1F !important;
+  /* Same dark background color for rows */
+  color: #FFFFFF !important;
+  /* White text for better visibility */
+}
+
+.dataTableHeader {
+  background-color: #090D1F; /* Slightly different background for the header */
+  color: #FFFFFF; /* White text for better visibility */
+}
+
+.p-paginator {
+  background-color: #090D1F !important; /* Dark background color */
+  border: none !important; /* Remove border */
 }

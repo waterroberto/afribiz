@@ -5,11 +5,12 @@ const colors = {
   primary: '#26a17b',
   secondary: '#F73164',
   tertiary: '#EAB308',
-  'primary-2': '#0D6EFD',
+  primary_2: '#0078FF',
   dark: '#111111',
   neutral: '#667085',
   success: '#22c55e',
   danger: '#ef4444',
+  white: "#fff",
 };
 
 // Check if the type match the colors type

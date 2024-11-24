@@ -23,7 +23,7 @@ const Hero = () => {
         </h2> */}
         <div className='flex items-center justify-center gap-4 my-6'>
           <Link href='/auth/register'>
-            <Button size='large'>Create Account</Button>
+            <Button color='primary_2' size='large'>Create Account</Button>
           </Link>
           <Link href='/auth/login'>
             <Button size='large' color='dark'>

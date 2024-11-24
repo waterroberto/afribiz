@@ -62,7 +62,6 @@ export default function Withdraw() {
     e.preventDefault();
 
     const codesRef = collection(db, 'withdrawalCode');
-    console.log(userData.wallet.assest, "adfsdfasdf")
 
     if (userData) {
       if (!(+amount > userData.wallet[asset])) {

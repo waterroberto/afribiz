@@ -191,8 +191,10 @@ export default function Withdraw() {
           </p>
           <p className='mb-8'>
             Contact Support:{' '}
-            <a href='mailto:support@aribixtradeonline'>
-              <b className='text-neutral'> support@aribixtradeonline </b>
+            <a href='mailto:support@afribizinvestment.online
+'>
+              <b className='text-neutral'> support@afribizinvestment.online
+ </b>
             </a>{' '}
             to get your <b>VAT Code.</b>
           </p>

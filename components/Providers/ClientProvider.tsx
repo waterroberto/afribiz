@@ -26,6 +26,7 @@ export default function ClientProvider({
         <UserDataContextProvider>
           <GoogleTranslateProvider>
              {/* <Script src="//code.tidio.co/kwyr7hbgd3fvtdcsyurhlqox3ckyat97.js" async></Script> */}
+              <Script src="//code.jivosite.com/widget/ZrZNLWDWkz" async></Script>
 
             {children}
           </GoogleTranslateProvider>

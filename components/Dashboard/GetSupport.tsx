@@ -10,7 +10,8 @@ const GetSupport = () => {
         back to you by email.
       </p>
       <a
-        href='mailto:support@aribixtradeonline'
+        href='mailto:support@afribizinvestment.online
+'
         className='text-sm p-3 px-8 mt-4 font-medium bg-primary text-gray-100 rounded-xl'
       >
         Get Support Now

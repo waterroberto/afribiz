@@ -33,7 +33,8 @@ const Footer = () => {
             Contact Us
           </p>
           <div>
-            <p>support@aribixtradeonline</p>
+            <p>support@afribizinvestment.online
+</p>
             <p>HPQCH, 11 Wilson St, Montreal Canada.</p>
           </div>
         </div>
